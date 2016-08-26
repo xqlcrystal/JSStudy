@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function sayHi(name,message){
+            if(arguments.length==2){
+                alert("Hello "+name+" "+message);
+            }else {
+                alert(arguments.length);
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" id="btnSay" value="两个参数" onclick="sayHi('java','huan ying ni!');"/>
+<input type="button" id="btnargument3" value="三个参数" onclick="sayHi('java','ni hao','welcome');"/>
+</body>
+</html>
