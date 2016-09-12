@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4.2.1延长作用域链</title>
+    <script type="text/javascript">
+        function  buildurl(){
+            var qs="?debug=true";
+            with(location){
+                var url=href+qs;
+            }
+            return url;
+        }
+
+        buildurl();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

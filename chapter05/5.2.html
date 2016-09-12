@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.2Array</title>
+    <script type="text/javascript">
+        var color=["red","green","blue"];
+        var name=[];
+        var values=[1,2,];
+        var options=[,,,,,,,,];
+
+        if(color instanceof Array){
+            alert(color);
+        }
+
+        if(Array.isArray(name)){
+            alert(name);
+        }
+
+        var person1={
+            toLocaleString:function(){
+                return "Nikolaos";
+            },
+            toString:function(){
+                return "Nik";
+            }
+        };
+
+        var person2={
+            toLocaleString:function(){
+                return "Person2";
+            },
+
+            toString:function(){
+                return "P2";
+            }
+        }
+
+        var  persons=[person1,person2];
+        alert(persons);
+        alert(persons.toString());
+        alert(persons.toLocaleString());
+
+        alert(color.join("|"));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

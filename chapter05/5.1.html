@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.1Object</title>
+    <script type="text/javascript">
+        function displayInfo(args){
+            var output="";
+            if(typeof args.name=="string"){
+                output+="Name: "+args.name+"\n";
+            }
+            if(typeof args.age=="number"){
+                output+="Age: "+args.age+"\n";
+            }
+
+            alert(output);
+
+        }
+
+        displayInfo({
+            name:"zhangsan",
+            age:25
+        });
+
+        displayInfo({
+            name:"lisi"
+        });
+    </script>
+</head>
+<body>
+<h1>一般来讲，命名参数虽然容易处理，但在多个可选参数的情况下会显示不够灵活。最好的做法是那些必须值使用命名参数，使用对象字面量来表示可选参数</h1>
+</body>
+</html>

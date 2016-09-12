@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.6基本包装类型</title>
+</head>
+<body>
+
+引用类型与基本包装类型的基本区别是生命周期
+使用New创建的引用类型在离开作用域之前一直存在内存中
+而基本包装类型值存在于一行代码执行瞬间
+
+<script type="text/javascript">
+    var s1="abc";
+    s1.color="red";
+    alert(s1.color);
+
+    var b=new Boolean(false);
+    alert(typeof b);//object
+
+    var s=new Object("some text");
+
+    alert(s instanceof String);//true
+</script>
+</body>
+</html>

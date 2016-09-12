@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.2.8迭代方法</title>
+    <script type="text/javascript">
+        var nums=[1,2,3,4,5,4,3,2,1];
+        var everyresult=nums.every(function(item,index,array){
+            return item>2;
+        });
+        alert(everyresult);
+
+        var someresult=nums.some(function(item,index,array){
+            return item>2;
+        });
+        alert(someresult);
+
+        var filterResult=nums.filter(function(item,index,array){
+            return item>2;
+        });
+
+        alert(filterResult);
+
+        var mapresult=nums.map(function(item,index,array){
+            return item*=2;
+        });
+
+        alert(mapresult);
+
+        var reduceresult=nums.reduce(function(pre,cur,index,array){
+            return pre+cur*cur;
+
+        });
+
+        alert(reduceresult);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
